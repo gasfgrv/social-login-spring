@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Please sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<div>
+    <nav>
+        <div class="nav-wrapper light-blue darken-1">
+            <span class="brand-logo center">Social Login</span>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 class="center-align">Faça login usando as suas redes sociais</h2>
+        <div class="row">
+            <div class="col s12 center-align" style="margin-bottom: 1%;">
+                <a class="waves-effect waves-light btn-large transparent" th:href="@{/oauth2/authorization/google}">
+                    <div class="valign-wrapper">
+                        <i class="fa-brands fa-google black-text"></i> &nbsp;
+                        <span class="black-text">Continue com o Google</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col s12 center-align" style="margin-bottom: 1%;">
+                <a class="waves-effect waves-light btn-large black" th:href="@{/oauth2/authorization/github}">
+                    <div class="valign-wrapper">
+                        <i class="fa-brands fa-github white-text"></i> &nbsp;
+                        <span class="white-text">Continue com o Github</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col s12 center-align" style="margin-bottom: 1%;">
+                <a class="waves-effect waves-light btn-large blue darken-3" th:href="@{/oauth2/authorization/facebook}">
+                    <div class="valign-wrapper">
+                        <i class="fa-brands fa-facebook white-text"></i> &nbsp;
+                        <span class="white-text">Continue com o Facebook</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

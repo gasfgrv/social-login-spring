@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: ${OAUTH_GOOGLE_CLIENT}
+            clientSecret: ${OAUTH_GOOGLE_SECRET}
+            scope:
+              - email
+              - profile
+          github:
+            clientId: ${OAUTH_GITHUB_CLIENT}
+            clientSecret: ${OAUTH_GITHUB_SECRET}
+            scope:
+              - user:email
+              - read:user
+          facebook:
+            clientId: ${OAUTH_FACEBOOK_CLIENT}
+            clientSecret: ${OAUTH_FACEBOOK_SECRET}
+            scope:
+              - email
+              - public_profile
