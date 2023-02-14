@@ -23,7 +23,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd oauthsocial
+  cd social-login-spring
 ```
 
 Instale as dependências e monte o Jar
